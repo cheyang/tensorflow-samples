@@ -1,10 +1,9 @@
-# Tensorflow Docker image with Aliyun mirror
+# Tensorflow Samples with Docker Swarm
 
 ================
-This Docker image is built from the official Tensorflow image with [Aliyun mirror](http://mirrors.aliyun.com/).
+- The distributed TensorFLow
 
 Contributors
 -------------------
-* Li Yi (denverdino@gmail.com)
 
 

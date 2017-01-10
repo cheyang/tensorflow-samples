@@ -6,6 +6,5 @@ services:
       - "22"
     labels:
       - aliyun.gpu=1
-      - aliyun.scale=2
     environment:
       - SSH_PASSWORD=abc4docker

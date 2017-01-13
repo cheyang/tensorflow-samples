@@ -1,0 +1,14 @@
+version: '2'
+services:
+  test:
+    image: registry-internal.cn-beijing.aliyuncs.com/tensorflow-samples/tensorflow-sshd:0.12.0-devel-gpu
+    ports:
+      - "22"
+    devices:
+      - /dev/nvidia0:/dev/nvidia0:rwm
+      - /dev/nvidiactl:/dev/nvidiactl:rwm
+      - /dev/nvidia-uvm:/dev/nvidia-uvm:rwm
+    volumes:
+      - nvidia_driver_367.48:/usr/local/nvidia
+    environment:
+      - SSH_PASSWORD=abc4docker

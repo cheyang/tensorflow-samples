@@ -1,10 +1,11 @@
 version: '2'
 services:
   test:
-    image: registry-internal.cn-beijing.aliyuncs.com/tensorflow-samples/tensorflow-sshd:0.12.0-devel-gpu
+    image: registry-internal.cn-beijing.aliyuncs.com/tensorflow-samples/tensorflow-sshd:0.12.0-devel
     ports:
       - "22"
+    mem_limit: 4G
     labels:
-      - aliyun.gpu=1
+      - aliyun.cpus.count=2
     environment:
       - SSH_PASSWORD=abc4docker
